@@ -1,6 +1,13 @@
-# Data Engineer Challenge
-Two [Apache Airflow](https://airflow.apache.org) data pipelines (tempus_challenge_dag and tempus_challenge_bonus_dag) to fetch data from [News API](https://newsapi.org), transform the data into a tabular structure (.csv), and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
+# Data Engineer Coding Exerise
+Simple ETL process with Python and SQLite to generate reports with [weather](https://www.kaggle.com/selfishgene/historical-hourly-weather-data) and sales data.
+ETL pipeline design to productize the reports. 
+One Simple Airflow pipeline: extact weather data from [Weather API](https://openweathermap.org/api) -> Flatten to .csv -> Load to S3 bucket
 
 ## Prerequisites
-1. [Python 3.6](https://www.python.org/) and [Virtualenv](https://virtualenv.pypa.io/en/latest/)
-2. [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+1. [Python 3.6](https://www.python.org/)
+2. [Virtualenv](https://virtualenv.pypa.io/en/latest/)
+3. [Jupyter Notebook](http://jupyter.org/)
+
+## Instructions for running the code
+1. Run `source env/bin/activate` to activate virtual environment
+
