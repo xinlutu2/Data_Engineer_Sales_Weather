@@ -25,9 +25,9 @@
 Below is a sample design to productize the reports:
 ![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/images/design.png 'Data Model')
 
-	* Data Modeling with be similar to the data model shown for local ETL process, but more comprehensive based on production report need. 
-	* For historical on-premise database (MySQL/Oracle), data will be partitioned by year. For analytics data mart (RedShift is an example), data will be partitioned by month. Sales data will be partitioned by store and then by year
-	# The enriched RedShift monthly data will be used to analytics and machine learning based on needs and data will be backfilled to historical on-premise database once it reach a full year complete data
+* Data Modeling with be similar to the data model shown for local ETL process, but more comprehensive based on production report need. 
+* For historical on-premise database (MySQL/Oracle), data will be partitioned by year. For analytics data mart (RedShift is an example), data will be partitioned by month. Sales data will be partitioned by store and then by year
+* The enriched RedShift monthly data will be used to analytics and machine learning based on needs and data will be backfilled to historical on-premise database once it reach a full year complete data
 
 Airflow is the tool considered for ETL pipeline and there is one simple Airflow data pipeline included under **Airflow_demo** directory, extact weather data from [Weather API](https://openweathermap.org/api) -> Flatten to .csv -> Load to S3 bucket. (Free account for [Weather API](https://openweathermap.org/api) can only fetch dailiy data. Historical data costs more)
 
