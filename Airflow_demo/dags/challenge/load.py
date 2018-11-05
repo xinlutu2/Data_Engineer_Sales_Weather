@@ -14,18 +14,17 @@ class Load:
 	@classmethod
 	def upload_to_S3(cls, **context):
 		
-		# getting base folder name: English/<keyword>
 		storage_name = context['params']['base']
 		base = os.path.join(local_dir, storage_name)
-		bucket_name = storage_name.lower().replace(' ', '')
+		bucket_name = 'storeweather'
 
 		session = boto3.Session(
-			aws_access_key_id='AKIAIJSTLZQYPLLCLK7Q',
-			aws_secret_access_key='d8D7uMke19lJ0ffvZ+0UWZ1IbAW++K07pvnq0k5Q',
+			aws_access_key_id='',
+			aws_secret_access_key='',
 			region_name='us-east-1'
 		)
 		s3 = session.resource('s3')
-		bucket = s3.Bucket('tempus'+bucket_name)
+		bucket = s3.Bucket(bucket_name)
 		
 		log.info("Getting Bucket Name")
 		log.info(bucket)

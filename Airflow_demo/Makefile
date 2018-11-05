@@ -16,11 +16,6 @@ lint:
 	@echo --- Lint ---
 	python -m flake8 ${MODULE}/
 
-test:
-	@echo
-	@echo --- Test ---
-	python -m pytest --cov=${MODULE} --cov-branch tests/
-
 clean:
 	@echo
 	@echo --- Clean ---
