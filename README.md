@@ -32,7 +32,7 @@ Below is a sample design to productize the reports:
 Airflow is the tool considered for ETL pipeline and there is one simple Airflow data pipeline included under **Airflow_demo** directory, extact weather data from [Weather API](https://openweathermap.org/api) -> Flatten to .csv -> Load to S3 bucket. (Free account for [Weather API](https://openweathermap.org/api) can only fetch dailiy data. Historical data costs more)
 
 ## Tradeoffs and Assumptions
-* The [weather](https://www.kaggle.com/selfishgene/historical-hourly-weather-data) historical data (.csv) from Kaggle are excepted to be complete and accurate for current ETL process. 
+* The [weather](https://www.kaggle.com/selfishgene/historical-hourly-weather-data) historical data (.csv) from Kaggle are assumed to be complete and accurate for current ETL process. 
 * AWS is taken as an example in ETL design. Google Cloud Platform (GCP) and Azure can also achieve same purpose.  
 * The ETL design is for batch process, streaming capability is not included in the design.
 
