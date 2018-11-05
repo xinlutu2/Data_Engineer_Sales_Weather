@@ -1,5 +1,5 @@
 # Simple Airflow Demo 
-One [Apache Airflow](https://airflow.apache.org) simple data pipelines (weather_bag) to fetch data from [Weather API](https://openweathermap.org/api), transform the data into a tabular structure (.csv), and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
+This Airflow is just for demo purpose to demonstrate Producation ETL design. One [Apache Airflow](https://airflow.apache.org) simple data pipelines (weather_bag) to fetch data from [Weather API](https://openweathermap.org/api), transform the data into a tabular structure (.csv), and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
 
 ## Prerequisites
 1. [Python 3.6](https://www.python.org/) and [Virtualenv](https://virtualenv.pypa.io/en/latest/)
