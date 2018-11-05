@@ -1,5 +1,5 @@
 # Simple Airflow Demo 
-This Airflow is just for demo purpose to demonstrate Producation ETL design. One [Apache Airflow](https://airflow.apache.org) simple data pipelines (weather_bag) to fetch data from [Weather API](https://openweathermap.org/api), transform the data into a tabular structure (.csv), and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
+This Airflow is just for demo purpose to help demonstrate Producation ETL design. One [Apache Airflow](https://airflow.apache.org) simple data pipeline (weather_bag) to fetch data from [Weather API](https://openweathermap.org/api), transform the data into a tabular structure (.csv), and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
 
 ## Prerequisites
 1. [Python 3.6](https://www.python.org/) and [Virtualenv](https://virtualenv.pypa.io/en/latest/)
@@ -30,10 +30,10 @@ The pipelines are designed to use as few operations as possible to achieve the p
 
 **Data Pipeline 1: weather_bag**
 
-![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/tree/master/Airflow_demo/images/bag1.png 'BAGs layout')
+![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images/bag1.png 'BAGs layout')
 
 The result .csv files are uploaded to S3 in **storeweather** as following:
 
-![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/tree/master/Airflow_demo/images/bucket1.png 'bucket layout')
+![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images//bucket1.png 'bucket layout')
 
-![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/tree/master/Airflow_demo/images/bucket2.png 'csv layout')
+![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images//bucket2.png 'csv layout')
