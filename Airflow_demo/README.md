@@ -36,4 +36,4 @@ The result .csv files are uploaded to S3 in **storeweather** as following:
 
 ![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images//bucket1.png 'bucket layout')
 
-![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images//bucket2.png 'csv layout')
+![alt text](https://github.com/xinlutu2/Data_Engineer_Sales_Weather/blob/master/Airflow_demo/images//bucket_csv.png 'csv layout')
